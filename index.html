@@ -60,7 +60,7 @@
       <section class="hero">
         <div class="hero-container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button data-modal-open class="hero-btn" type="button">Заказать услугу</button>
+          <button data-modal-open class="btn" type="button">Заказать услугу</button>
         </div>
       </section>
 
@@ -312,7 +312,7 @@
       </section>
 
       <!-- CLIENTS -->
-      <setion class="clients">
+      <section class="clients">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="list client-list">
@@ -360,7 +360,7 @@
             </li>
           </ul>
         </div>
-      </setion>
+      </section>
     </main>
 
     <!-- FOOTER -->
@@ -380,7 +380,7 @@
             </ul>
           </address>
         </div>
-        <div class="footer-join">
+        <div class="footer-social-links">
           <p class="footer-join-slogan">присоединяйтесь</p>
           <ul class="list social-list">
             <li class="social-item">
@@ -413,6 +413,20 @@
             </li>
           </ul>
         </div>
+        <div class="footer-join">
+          <form action="">
+            <label class="footer-join-slogan" for="mail">Подпишитесь на рассылку</label>
+            <div class="footer-join-form">
+              <input class="input-email" type="email" name="mail" id="mail" placeholder="E-mail" />
+              <button class="btn" type="submit">
+                <span>Подписаться</span>
+                <svg class="icon-send-svg" width="24" height="24">
+                  <use href="/img/svg/sprite2.svg#icon-send" />
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -420,6 +434,36 @@
         <button type="button" class="modal-btn" data-modal-close>
           <span class="line left"></span><span class="line right"></span>
         </button>
+        <div class="backdrop-inner">
+          <b class="backdrop-caption">Оставьте свои данные, мы вам перезвоним</b>
+          <form class="modal-form" action="">
+            <label class="field-desc" for="name">Имя</label>
+            <input class="border-form border-wh" type="text" name="name" id="name" />
+
+            <label class="field-desc" for="telephone">Телефон</label>
+            <input class="border-form border-wh" type="tel" name="telephone" id="telephone" />
+
+            <label class="field-desc" for="mail">Почта</label>
+            <input class="border-form border-wh" type="email" name="mail" id="mail" />
+
+            <label class="field-desc" for="comments">Комментарий</label>
+            <textarea
+              class="border-form text-area"
+              name="comments"
+              id="comments"
+              rows="10"
+              placeholder="Введите текст"
+            ></textarea>
+
+            <div class="contract-wrapper">
+              <input id="contract" name="contract" type="checkbox" value="yes" />
+              <label class="field-desc contract" for="contract"
+                >Соглашаюсь с рассылкой и принимаю <a href="#" target="_blank">Условия договора</a></label
+              >
+            </div>
+            <button class="btn" type="submit">Отправить</button>
+          </form>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
