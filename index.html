@@ -440,16 +440,25 @@
           <b class="backdrop-caption">Оставьте свои данные, мы вам перезвоним</b>
           <form class="modal-form" action="">
             <div class="modal-form-field">
-              <label class="field-desc" for="name">Имя</label>
               <input class="border-form border-wh" type="text" name="name" id="name" requared />
+              <label class="field-desc modal-form-input-label" for="name">Имя</label>
+              <svg class="modal-form-icon" width="18" height="18">
+                <use href="./img/svg/sprite.svg#icon-pers" />
+              </svg>
             </div>
             <div class="modal-form-field">
-              <label class="field-desc" for="telephone">Телефон</label>
               <input class="border-form border-wh" type="tel" name="telephone" id="telephone" requared />
+              <label class="field-desc modal-form-input-label" for="telephone">Телефон</label>
+              <svg class="modal-form-icon" width="18" height="18">
+                <use href="./img/svg/sprite.svg#icon-tel" />
+              </svg>
             </div>
             <div class="modal-form-field">
-              <label class="field-desc" for="email">Почта</label>
               <input class="border-form border-wh" type="email" name="mail" id="email" requared />
+              <label class="field-desc modal-form-input-label" for="email">Почта</label>
+              <svg class="modal-form-icon" width="18" height="18">
+                <use href="./img/svg/sprite.svg#icon-mail" />
+              </svg>
             </div>
 
             <label class="field-desc" for="comments">Комментарий</label>
@@ -461,9 +470,16 @@
             ></textarea>
 
             <div class="contract-wrapper">
-              <input id="contract" name="contract" type="checkbox" value="accept-value" />
-              <label class="field-desc contract" for="contract"
-                >Соглашаюсь с рассылкой и принимаю <a href="#" target="_blank">Условия договора</a></label
+              <input
+                class="modal-form-check visually-hidden"
+                id="user-policy"
+                name="user-policy"
+                type="checkbox"
+                value="accept-policy"
+              />
+              <label class="field-desc modal-form-label-check" for="user-policy"
+                >Соглашаюсь с рассылкой и принимаю
+                <a href="#" target="_blank" class="user-policy-link">Условия договора</a></label
               >
             </div>
             <button class="btn" type="submit">Отправить</button>
