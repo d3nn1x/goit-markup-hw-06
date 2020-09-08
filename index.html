@@ -421,7 +421,7 @@
               <button class="btn" type="submit">
                 <span>Подписаться</span>
                 <svg class="icon-send-svg" width="24" height="24">
-                  <use href="/img/svg/sprite2.svg#icon-send" />
+                  <use href="/img/svg/sprite.svg#icon-send" />
                 </svg>
               </button>
             </div>
@@ -440,25 +440,24 @@
           <b class="backdrop-caption">Оставьте свои данные, мы вам перезвоним</b>
           <form class="modal-form" action="">
             <label class="field-desc" for="name">Имя</label>
-            <input class="border-form border-wh" type="text" name="name" id="name" />
+            <input class="border-form border-wh" type="text" name="name" id="name" requared />
 
             <label class="field-desc" for="telephone">Телефон</label>
-            <input class="border-form border-wh" type="tel" name="telephone" id="telephone" />
+            <input class="border-form border-wh" type="tel" name="telephone" id="telephone" requared />
 
             <label class="field-desc" for="email">Почта</label>
-            <input class="border-form border-wh" type="email" name="mail" id="email" />
+            <input class="border-form border-wh" type="email" name="mail" id="email" requared />
 
             <label class="field-desc" for="comments">Комментарий</label>
             <textarea
               class="border-form text-area"
               name="comments"
               id="comments"
-              rows="10"
               placeholder="Введите текст"
             ></textarea>
 
             <div class="contract-wrapper">
-              <input id="contract" name="contract" type="checkbox" value="yes" />
+              <input id="contract" name="contract" type="checkbox" value="accept-value" />
               <label class="field-desc contract" for="contract"
                 >Соглашаюсь с рассылкой и принимаю <a href="#" target="_blank">Условия договора</a></label
               >
