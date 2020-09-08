@@ -197,28 +197,28 @@
                 <p class="team-list-item-position" lang="en">Frontend Developer</p>
                 <ul class="list social-list">
                   <li class="social-item">
-                    <a href="#" target="_blank" aria-label="cсылка на инстаграм" class="social-link">
+                    <a href="#" target="_blank" aria-label="cсылка на инстаграм" class="link social-link">
                       <svg class="social-link-svg">
                         <use href="./img/svg/sprite.svg#icon-instagram" />
                       </svg>
                     </a>
                   </li>
                   <li class="social-item">
-                    <a href="#" target="_blank" aria-label="cсылка на твитер" class="social-link">
+                    <a href="#" target="_blank" aria-label="cсылка на твитер" class="link social-link">
                       <svg class="social-link-svg">
                         <use href="./img/svg/sprite.svg#icon-twitter" />
                       </svg>
                     </a>
                   </li>
                   <li class="social-item">
-                    <a href="#" target="_blank" aria-label="cсылка на фейсбук" class="social-link">
+                    <a href="#" target="_blank" aria-label="cсылка на фейсбук" class="link social-link">
                       <svg class="social-link-svg">
                         <use href="./img/svg/sprite.svg#icon-facebook" />
                       </svg>
                     </a>
                   </li>
                   <li class="social-item">
-                    <a href="#" target="_blank" aria-label="cсылка на линкидин" class="social-link">
+                    <a href="#" target="_blank" aria-label="cсылка на линкидин" class="link social-link">
                       <svg class="social-link-svg">
                         <use href="./img/svg/sprite.svg#icon-linkedin" />
                       </svg>
@@ -439,14 +439,18 @@
         <div class="backdrop-inner">
           <b class="backdrop-caption">Оставьте свои данные, мы вам перезвоним</b>
           <form class="modal-form" action="">
-            <label class="field-desc" for="name">Имя</label>
-            <input class="border-form border-wh" type="text" name="name" id="name" requared />
-
-            <label class="field-desc" for="telephone">Телефон</label>
-            <input class="border-form border-wh" type="tel" name="telephone" id="telephone" requared />
-
-            <label class="field-desc" for="email">Почта</label>
-            <input class="border-form border-wh" type="email" name="mail" id="email" requared />
+            <div class="modal-form-field">
+              <label class="field-desc" for="name">Имя</label>
+              <input class="border-form border-wh" type="text" name="name" id="name" requared />
+            </div>
+            <div class="modal-form-field">
+              <label class="field-desc" for="telephone">Телефон</label>
+              <input class="border-form border-wh" type="tel" name="telephone" id="telephone" requared />
+            </div>
+            <div class="modal-form-field">
+              <label class="field-desc" for="email">Почта</label>
+              <input class="border-form border-wh" type="email" name="mail" id="email" requared />
+            </div>
 
             <label class="field-desc" for="comments">Комментарий</label>
             <textarea
